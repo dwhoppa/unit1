@@ -8,27 +8,27 @@
 
 
 ## code
-def translated_dna(dna_chain):
-    translated_chain = ""
-
-    for x in dna_chain:
-        if x == 'A':
-            translated_chain +='T'
-        elif x == 'G':
-            translated_chain +='C'
-        elif x == 'T':
-            translated_chain +='A'
-        elif x == 'C':
-            translated_chain +='G'
-        else:
-            print('The symbol is not defined')
-    return translated_chain
-
-print('Enter a DNA chain: ')
-dna_chain = input()
-translated_chain = translated_dna(dna_chain)
-print('Translated DNA chain: ')
-print(translated_chain)
+            def translated_dna(dna_chain):
+                translated_chain = ""
+            
+                for x in dna_chain:
+                    if x == 'A':
+                        translated_chain +='T'
+                    elif x == 'G':
+                        translated_chain +='C'
+                    elif x == 'T':
+                        translated_chain +='A'
+                    elif x == 'C':
+                        translated_chain +='G'
+                    else:
+                        print('The symbol is not defined')
+                return translated_chain
+            
+            print('Enter a DNA chain: ')
+            dna_chain = input()
+            translated_chain = translated_dna(dna_chain)
+            print('Translated DNA chain: ')
+            print(translated_chain)
 
 ## proof of work
 <img width="1440" alt="Screenshot 2024-09-12 at 2 06 02" src="https://github.com/user-attachments/assets/6367cb2c-78b4-49d7-b32d-458d24924a8a">
