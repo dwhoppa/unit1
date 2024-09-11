@@ -16,5 +16,5 @@ else:
 print(f"{word} -> {result}")
 
 ## proof of work
-Enter a word:localization
-localization -> l10n
+<img width="1440" alt="Screenshot 2024-09-12 at 2 02 24" src="https://github.com/user-attachments/assets/13350684-c680-463c-95d9-b81bfe24db69">
+
