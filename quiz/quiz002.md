@@ -16,6 +16,4 @@ else:
     print('False')
 
 ## proof of work
-Enter the first number: 10
-Enter the second number: 10
-True
+<img width="1440" alt="Screenshot 2024-09-12 at 2 01 29" src="https://github.com/user-attachments/assets/01294550-83e1-4a3c-a28a-c4c190f13099">
