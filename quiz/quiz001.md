@@ -3,7 +3,8 @@
 
 
 ## paper solution
-![image](https://github.com/user-attachments/assets/416904b1-fd77-4e9b-9a92-35f2d545d553)
+![IMG_2668](https://github.com/user-attachments/assets/34bcc5db-33bc-495e-adee-b8a621fc3550)
+
 
 ## code
 word=input('Enter a word:')
