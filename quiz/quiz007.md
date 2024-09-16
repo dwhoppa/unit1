@@ -6,6 +6,8 @@
 ![IMG_2675](https://github.com/user-attachments/assets/50870bbd-61ea-4ef6-a54f-788e008024ad)
 ![IMG_2674](https://github.com/user-attachments/assets/95a248a3-76d6-4131-b2df-836591513f33)
 
+## flow diagram
+<img width="336" alt="Screenshot 2024-09-17 at 0 12 30" src="https://github.com/user-attachments/assets/166ef11d-dc3d-47b7-913a-2780203e60b1">
 
 
 ## code
