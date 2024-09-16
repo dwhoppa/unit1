@@ -5,6 +5,9 @@
 ## paper solution
 ![IMG_2668](https://github.com/user-attachments/assets/34bcc5db-33bc-495e-adee-b8a621fc3550)
 
+## flow diagram
+<img width="462" alt="Screenshot 2024-09-16 at 23 17 52" src="https://github.com/user-attachments/assets/e4173075-eadd-474c-92a2-6ddad355356c">
+
 
 ## code
             word=input('Enter a word:')
