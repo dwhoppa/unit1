@@ -6,7 +6,8 @@
 ![IMG_2671](https://github.com/user-attachments/assets/55dcfb91-657e-4f8d-aa52-3946c5bbd00d)
 
 ## flow diagram
-![Uploading Screenshot 2024-09-16 at 23.55.20.png…]()
+<img width="418" alt="Screenshot 2024-09-16 at 23 58 20" src="https://github.com/user-attachments/assets/dbd0076d-0563-4755-8e95-6fc00fd80538">
+
 
 
 
