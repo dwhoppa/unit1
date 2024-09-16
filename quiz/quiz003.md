@@ -5,6 +5,8 @@
 ## paper solution
 ![IMG_2670](https://github.com/user-attachments/assets/ffb12cad-e398-41f3-a08a-fbe695ecb7ee)
 
+## flow diagram
+<img width="869" alt="Screenshot 2024-09-16 at 23 44 37" src="https://github.com/user-attachments/assets/4d981ae6-3f9b-4494-a41e-4048ec8bcc8c">
 
 
 ## code
