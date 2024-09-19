@@ -34,8 +34,8 @@ After I spoke with my client, we came up with a solution to this problem. Create
 ### Test plan
 
 ## Record of Tasks
-| Task Number | Planned action              | Planned outcome | Time estimated | Target Completion Date | Criterion |
-|-------------|-----------------------------|-----------------|----------------|------------------------|-----------|
-| 1           | 1st meeting with the client |                 |                |                        |           |
-| 2           |                             |                 |                |                        |           |
-|             |                             |                 |                |                        |           |
+| Task Number | Planned action                            | Planned outcome                          | Time estimated | Target Completion Date | Criterion |
+|-------------|-------------------------------------------|------------------------------------------|----------------|------------------------|-----------|
+| 1           | 1st part of 1st meeting with the client   | Identify the problem that the client has | 5 min          | sep 13                 | A         |
+| 2           | 2nd part of first meeting with the client | Brainstorm and create the solution       | 10 min         | sep 13                 | A         |
+| 3           | Plan the success criteria points          | The clear view of the requirements       | 15 min         | sep 13                 | A         |
