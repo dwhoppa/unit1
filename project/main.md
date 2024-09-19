@@ -12,6 +12,15 @@ After I spoke with my client, we came up with a solution to this problem. Create
 
 ## Success criteria
 
+The calculator should accept user input to perform basic operations (addition, subtraction, multiplication, division).
+The calculator can handle typical errors (e.g., division by zero) and give appropriate feedback.
+If the user enters the secret code ("open123"), the program will change modes and act as a password manager.
+In password manager mode, the user should be able to perform CRUD operations (Create, Replace, Update, Delete):
+Add a password (for example, for a website).
+View the stored passwords (only if they re-enter the secret code).
+Save passwords permanently and securely
+Use the terminal to interact with the user.
+
 # Criterion B: Design
 
 ### System diagram
