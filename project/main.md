@@ -187,8 +187,8 @@ This flow diagram explains to the user the steps of the function that writes a l
                             return
   
 3. settings.py
-          secretphrase = "open123"
-          password_file_name = "passwords.txt"
+                      secretphrase = "open123"
+                      password_file_name = "passwords.txt"
 
 ## Record of Tasks
 | Task Number | Planned action                                                     | Planned outcome                                                                                                                                                                                | Time estimated | Target Completion Date | Criterion |
