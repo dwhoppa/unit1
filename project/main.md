@@ -24,6 +24,7 @@ After I spoke with my client, we came up with a solution to this problem. Create
 # Criterion B: Design
 
 ### System diagram
+![Untitled presentation](https://github.com/user-attachments/assets/997ed749-8fb8-4d80-a64d-787a997d3e35)
 
 ### Flow diagrams for algorithms
 
