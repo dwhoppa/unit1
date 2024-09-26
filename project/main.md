@@ -200,6 +200,21 @@ This table summarizes essential test cases for the password manager program. It 
                           secretphrase = "open123"
                           password_file_name = "passwords.txt"
 ________________________________________________________________________________________________________
+
+Also the user has terminal to interact with the program.
+In the calculator mode the terminal looks like this:
+<img width="179" alt="image" src="https://github.com/user-attachments/assets/d2177254-050d-436b-8a9c-6ee97c42d42a">
+or like this:
+<img width="251" alt="image" src="https://github.com/user-attachments/assets/1a89dea5-de36-4b16-a1f1-3ff713f64d56">
+
+When the user inputs the secret phrase for the 1st number the program opens a password manager:
+<img width="248" alt="image" src="https://github.com/user-attachments/assets/04cd1d70-829f-4deb-b1e8-31cf38402c6a">
+
+For example let's choose 1st option. The program will list all the passwords hidden with "*":
+
+<img width="145" alt="image" src="https://github.com/user-attachments/assets/a063bb17-164e-4900-8ec0-df1d1bdc26b7">
+
+_______________________________________________________________________________
 The document with passwords will look like this, with all the passwords encrypted. Even if the document did not exist before the program creates it.
 <img width="715" alt="image" src="https://github.com/user-attachments/assets/d0f2a649-edb2-4772-a3ff-dda0908be52b">
 
