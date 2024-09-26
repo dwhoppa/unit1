@@ -46,6 +46,15 @@ This flow diagram explains to the user the steps of the function that displays t
 This flow diagram explains to the user the steps of the function that writes a list of passwords stored in a dictionary to a file.
 
 ### Test plan
+|                Description               |    Test Type   |                       Input                      |                 Expected Outcome                 |
+|:----------------------------------------:|:--------------:|:------------------------------------------------:|:------------------------------------------------:|
+| Validate addition operation              | Functional     | 5, 10, +                                         | Output: 5 + 10 = 15                              |
+| Verify password view with correct phrase | Security       | Secret phrase, option 2, correct secret phrase   | Displays the requested password in plain text    |
+| Create new password                      | Functional     | Secret phrase, option 3, name, new password      | Password is stored with a confirmation message   |
+| Handle division by zero                  | Error Handling | 10, 0, /                                         | Output: Cannot divide by zero.                   |
+| Deny password view with incorrect phrase | Security       | Secret phrase, option 2, incorrect secret phrase | Displays Incorrect secret phrase. Access denied. |
+
+This table summarizes essential test cases for the password manager program. It outlines what each test does, the type of test, the inputs used, and the expected results. The goal is to ensure that the program functions correctly and securely across key features like calculations and password management.
 
 ## Criterion C: The code
 1. Calculator.py
@@ -190,6 +199,10 @@ This flow diagram explains to the user the steps of the function that writes a l
    
                           secretphrase = "open123"
                           password_file_name = "passwords.txt"
+________________________________________________________________________________________________________
+The document with passwords will look like this, with all the passwords encrypted. Even if the document did not exist before the program creates it.
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/d0f2a649-edb2-4772-a3ff-dda0908be52b">
+
 
 ## Record of Tasks
 | Task Number | Planned action                                                     | Planned outcome                                                                                                                                                                                | Time estimated | Target Completion Date | Criterion |
