@@ -49,146 +49,146 @@ This flow diagram explains to the user the steps of the function that writes a l
 
 ## Criterion C: The code
 1. Calculator.py
-   
-from settings import *
-from password_manager import password_manager
-
-
-while True:
-    num1 = input('Enter the 1st number ')
-
-    if num1.lower() in ('quit', 'exit'):
-        break
-
-    if num1 == secretphrase:
-        # go to password manager mode
-        password_manager()
-        continue
-    a = float(num1)
-    b = float(input('Enter the 2nd number '))
-    op = input('Choose an operation (+-*/) ')
-
-    if op == '+':
-        r = a + b
-    elif op == '-':
-        r = a - b
-    elif op == '*':
-        r = a * b
-    elif op == '/':
-        if b == 0:
-            print("Error. Division by zero is not allowed.")
-            continue
-        r = a / b
-    else:
-        print("Invalid operation. Please try again.")
-        continue
-
-    print(f'{a}{op}{b} = {r}')
-
+     
+  from settings import *
+  from password_manager import password_manager
+  
+  
+  while True:
+      num1 = input('Enter the 1st number ')
+  
+      if num1.lower() in ('quit', 'exit'):
+          break
+  
+      if num1 == secretphrase:
+          # go to password manager mode
+          password_manager()
+          continue
+      a = float(num1)
+      b = float(input('Enter the 2nd number '))
+      op = input('Choose an operation (+-*/) ')
+  
+      if op == '+':
+          r = a + b
+      elif op == '-':
+          r = a - b
+      elif op == '*':
+          r = a * b
+      elif op == '/':
+          if b == 0:
+              print("Error. Division by zero is not allowed.")
+              continue
+          r = a / b
+      else:
+          print("Invalid operation. Please try again.")
+          continue
+  
+      print(f'{a}{op}{b} = {r}')
+  
 2. password_manager
    from settings import *
-from os.path import exists
-
-
-def menu():
-    text_menu = '''
-    1. List all of the passwords
-    2. Check the password in open view 
-    3. Create new password
-    4. Change the existing password
-    5. Remove the password from list
-    0. Return back to calculator mode
-Please, select one option: '''
-    while True:
-        print(text_menu)
-        opt = input()
-        if opt in '012345':
-            return int(opt)
-
-def encrypt(password):
-    return password[::-1]
-
-def decrypt(encrypted_password):
-    return encrypted_password[::-1]
-
-def read_password_file():
-    passwords = {}
-    if exists(password_file_name):
-        with open(password_file_name) as pf:
-            for s in pf:
-                name, psw = s.split(':')
-                name = name.strip()
-                psw = psw.strip()
-                passwords[name] = decrypt(psw)
-    return passwords
-
-
-def write_password_file(passwords):
-    with open(password_file_name, 'w') as pf:
-        for name in passwords:
-            encrypted_psw = encrypt(passwords[name])
-            pf.write(f'{name}:{encrypted_psw}\n')
-
-
-def print_passwords(passwords):
-    if not passwords:
-        print('No password')
-        return False
-    i = 0
-    print('All passwords:')
-    for name in passwords:
-        psw = passwords[name]
-        i += 1
-        print(f'{i}. {name}: {"*" * len(psw)}')
-    return True
-
-def password_manager():
-    print('Welcome to Password Manager!')
-    passwords = read_password_file()
-    while True:
-        opt = menu()
-
-        if opt == 1:
-            print_passwords(passwords)
-
-        elif opt == 2:
-            secret_input = input('Please enter the secret phrase to view passwords: ')
-            if secret_input != secretphrase:
-                print("Incorrect secret phrase. Access denied.")
-                continue
-            if print_passwords(passwords):
-                psw_num = int(input(f'Enter a number of password to view (1 - {len(passwords)}) '))
-                name = list(passwords)[psw_num - 1]
-                psw = passwords[name]
-                print(f'{name}: {psw}')
-
-        elif opt == 3:
-            name = input('Enter the name of new password ')
-            psw = input('Enter the new password ')
-            passwords[name] = psw
-            write_password_file(passwords)
-
-        elif opt == 4:
-            if print_passwords(passwords):
-                psw_num = int(input(f'Enter a number of password to change (1 - {len(passwords)}) '))
-                name = list(passwords)[psw_num - 1]
-                psw = input('Enter the new password ')
-                passwords[name] = psw
-                write_password_file(passwords)
-
-        elif opt == 5:
-            if print_passwords(passwords):
-                name = input('Enter the name to remove from list ')
-                del passwords[name]
-                write_password_file(passwords)
-
-        else:
-            print('Return to calculator mode')
-            return
-
+   from os.path import exists
+  
+  
+  def menu():
+      text_menu = '''
+      1. List all of the passwords
+      2. Check the password in open view 
+      3. Create new password
+      4. Change the existing password
+      5. Remove the password from list
+      0. Return back to calculator mode
+  Please, select one option: '''
+      while True:
+          print(text_menu)
+          opt = input()
+          if opt in '012345':
+              return int(opt)
+  
+  def encrypt(password):
+      return password[::-1]
+  
+  def decrypt(encrypted_password):
+      return encrypted_password[::-1]
+  
+  def read_password_file():
+      passwords = {}
+      if exists(password_file_name):
+          with open(password_file_name) as pf:
+              for s in pf:
+                  name, psw = s.split(':')
+                  name = name.strip()
+                  psw = psw.strip()
+                  passwords[name] = decrypt(psw)
+      return passwords
+  
+  
+  def write_password_file(passwords):
+      with open(password_file_name, 'w') as pf:
+          for name in passwords:
+              encrypted_psw = encrypt(passwords[name])
+              pf.write(f'{name}:{encrypted_psw}\n')
+  
+  
+  def print_passwords(passwords):
+      if not passwords:
+          print('No password')
+          return False
+      i = 0
+      print('All passwords:')
+      for name in passwords:
+          psw = passwords[name]
+          i += 1
+          print(f'{i}. {name}: {"*" * len(psw)}')
+      return True
+  
+  def password_manager():
+      print('Welcome to Password Manager!')
+      passwords = read_password_file()
+      while True:
+          opt = menu()
+  
+          if opt == 1:
+              print_passwords(passwords)
+  
+          elif opt == 2:
+              secret_input = input('Please enter the secret phrase to view passwords: ')
+              if secret_input != secretphrase:
+                  print("Incorrect secret phrase. Access denied.")
+                  continue
+              if print_passwords(passwords):
+                  psw_num = int(input(f'Enter a number of password to view (1 - {len(passwords)}) '))
+                  name = list(passwords)[psw_num - 1]
+                  psw = passwords[name]
+                  print(f'{name}: {psw}')
+  
+          elif opt == 3:
+              name = input('Enter the name of new password ')
+              psw = input('Enter the new password ')
+              passwords[name] = psw
+              write_password_file(passwords)
+  
+          elif opt == 4:
+              if print_passwords(passwords):
+                  psw_num = int(input(f'Enter a number of password to change (1 - {len(passwords)}) '))
+                  name = list(passwords)[psw_num - 1]
+                  psw = input('Enter the new password ')
+                  passwords[name] = psw
+                  write_password_file(passwords)
+  
+          elif opt == 5:
+              if print_passwords(passwords):
+                  name = input('Enter the name to remove from list ')
+                  del passwords[name]
+                  write_password_file(passwords)
+  
+          else:
+              print('Return to calculator mode')
+              return
+  
 3. settings.py
-secretphrase = "open123"
-password_file_name = "passwords.txt"
+    secretphrase = "open123"
+    password_file_name = "passwords.txt"
 
 ## Record of Tasks
 | Task Number | Planned action                                                     | Planned outcome                                                                                                                                                                                | Time estimated | Target Completion Date | Criterion |
