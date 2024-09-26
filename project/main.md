@@ -14,7 +14,7 @@ After I spoke with my client, we came up with a solution to this problem. Create
 
 1. The calculator should accept user input to perform basic operations (addition, subtraction, multiplication, division).
 1. The calculator can handle typical errors (e.g., division by zero) and give appropriate feedback.
-1. If the user enters the secret code ("open123"), the program will change modes and act as a password manager.
+1. If the user enters the secret code ("open123") for the first number input, the program will change modes and act as a password manager.
 1. In password manager mode, the user should be able to perform CRUD operations (Create, Replace, Update, Delete):
    * Add a password (for example, for a website).
    * View the stored passwords (only if they re-enter the secret code).
@@ -26,6 +26,22 @@ After I spoke with my client, we came up with a solution to this problem. Create
 ### System diagram
 
 ### Flow diagrams for algorithms
+
+![Untitled Project (4)](https://github.com/user-attachments/assets/b88222bf-66dd-4cad-aae9-df3821f5724a)
+
+This flow diagram explains to the user the steps of the function that presents a text-based menu to the user and asking them to select an option. It only accepts valid options from a menu set and returns the selected option as an integer.
+
+--------------------------------------------------------------------------------------------------------
+
+![Untitled Project (3)](https://github.com/user-attachments/assets/ddead595-e7c3-421d-9993-d6808b52098a)
+
+This flow diagram explains to the user the steps of the function that displays the list of passwords in a masked format (where each character of the password is replaced by an *) along with the corresponding name.
+
+--------------------------------------------------------------------------------------------------------
+
+![Untitled Project (2)](https://github.com/user-attachments/assets/8af47a6e-a8a3-42b0-83d3-3c01e6149a90)
+
+This flow diagram explains to the user the steps of the function that writes a list of passwords stored in a dictionary to a file.
 
 ### Data storage
 
