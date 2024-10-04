@@ -3,7 +3,8 @@
 
 
 ## paper solution
-![image](https://github.com/user-attachments/assets/328af5c0-b051-46d7-9fa1-cecd9094aad6)
+![image](https://github.com/user-attachments/assets/2437d4ad-3636-4d34-80b8-f6e232ecb712)
+
 
 
 ## flow diagram
