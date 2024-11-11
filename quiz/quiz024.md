@@ -23,10 +23,10 @@
                       plt.ylabel('$h=mx+b$')
                       plt.show()
 
-10 -> 0A
-255/16 = 15 and the remainder 15 -> FF
-235/16 = 14 and the remainder 11 -> EB
-Answer: #0AFFEB
+                      10 -> 0A
+                      255/16 = 15 and the remainder 15 -> FF
+                      235/16 = 14 and the remainder 11 -> EB
+                      Answer: #0AFFEB
 
 ## proof of work
 <img width="1440" alt="Screenshot 2024-11-11 at 1 20 57" src="https://github.com/user-attachments/assets/9b445a6a-f9bf-492a-a128-ca709742de6d">
